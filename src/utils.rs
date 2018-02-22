@@ -1,20 +1,20 @@
 
 #[derive(Debug)]
-struct SourcePos {
+pub struct SourcePos {
     start_line: u32,
     start_col: u32,
     end_line: u32,
     end_col: u32
 }
 
-fn mk_pos(sl:u32, sc:u32, el:u32, ec:u32) -> SourcePos {
+pub fn mk_pos(sl:u32, sc:u32, el:u32, ec:u32) -> SourcePos {
     SourcePos { start_line: sl, start_col: sc
                 , end_line: el, end_col: ec }
 }
 
 impl SourcePos {
 
-    fn show_lts(&self) -> String {
+    pub fn show_lts(&self) -> String {
         format!("@pos({}:{}->{}:{})"
                 , self.start_line
                 , self.start_col
