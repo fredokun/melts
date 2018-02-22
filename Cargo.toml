@@ -1,0 +1,6 @@
+[package]
+name = "melts"
+version = "0.1.0"
+authors = ["fredokun <frederic.peschanski@lip6.fr>"]
+
+[dependencies]
