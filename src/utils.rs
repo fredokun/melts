@@ -1,5 +1,5 @@
 
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 pub struct SourcePos {
     start_line: u32,
     start_col: u32,
